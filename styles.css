@@ -98,6 +98,121 @@ nav ul li a.active {
     font-size: 48px;
     font-weight: bold;
 }
+/* Welcome Section */
+.welcome {
+    display: flex;
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+}
+
+.welcome-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.welcome-content h3 {
+    color: #b8860b;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.welcome-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #b8860b;
+    margin-bottom: 30px;
+}
+
+.welcome-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    flex: 1;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* Reservation Section */
+.reservation {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.reservation h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reservation .divider {
+    margin: 0 auto 30px;
+}
+
+.reservation p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+.reservation-form {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    width: 32%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    resize: none;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
 /* Footer */
 footer {
     background-color: #222;
@@ -205,6 +320,68 @@ footer {
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+/* Mission Vision Section Styles */
+.mission-vision-section {
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.mission-column, .vision-column {
+    flex: 1;
+    text-align: center;
+}
+
+.mission-column h2, .vision-column h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.decorative-line {
+    width: 80px;
+    height: 2px;
+    background-color: #e8b633;
+    margin: 0 auto 30px;
+}
+
+.mission-column p, .vision-column p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.food-image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.food-image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .mission-vision-container {
+        flex-direction: column;
+    }
+    
+    .mission-column, .vision-column, .food-image-column {
+        margin-bottom: 40px;
+    }
+}
+/* menu */
 .menu-container, .special-container {
     max-width: 800px;
     margin: 60px auto;
